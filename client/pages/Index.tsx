@@ -39,7 +39,7 @@ function Hero() {
               <div className="flex items-center gap-2">
                 <a href="https://github.com/promise-ibeh" target="_blank" rel="noreferrer" className="inline-flex size-10 items-center justify-center rounded-md border hover:bg-accent"><Github className="size-5" /></a>
                 <a href="https://www.linkedin.com/in/promise-ibeh" target="_blank" rel="noreferrer" className="inline-flex size-10 items-center justify-center rounded-md border hover:bg-accent"><Linkedin className="size-5" /></a>
-                <a href="mailto:hello@promiseibeh.dev" className="inline-flex size-10 items-center justify-center rounded-md border hover:bg-accent"><Mail className="size-5" /></a>
+                <a href="mailto:ibehpromise3d@gmail.com" className="inline-flex size-10 items-center justify-center rounded-md border hover:bg-accent"><Mail className="size-5" /></a>
               </div>
             </div>
             <div className="flex flex-wrap gap-2 pt-2">
@@ -50,13 +50,17 @@ function Hero() {
           </div>
           <div className="relative">
             <div className="relative mx-auto aspect-square w-64 sm:w-80 rounded-2xl bg-gradient-to-br from-primary to-accent p-1 shadow-2xl">
-              <div className="h-full w-full rounded-xl bg-background grid place-items-center">
-                <Smartphone className="size-20 text-primary" />
+              <div className="h-full w-full rounded-xl bg-background grid place-items-center overflow-hidden">
+                <img
+                  src="/PromiseIbeh.png"
+                  alt="Promise Ibeh"
+                  className="w-full h-full object-cover roynded-xl animate-float"
+                />
               </div>
             </div>
             <div className="mt-6 grid grid-cols-3 gap-3 text-center text-sm text-muted-foreground">
               <div className="rounded-lg border p-3"><p className="font-semibold text-foreground">30+ </p>Production Releases</div>
-              <div className="rounded-lg border p-3"><p className="font-semibold text-foreground">6+ </p>Years Experience</div>
+              <div className="rounded-lg border p-3"><p className="font-semibold text-foreground">4+ </p>Years Experience</div>
               <div className="rounded-lg border p-3"><p className="font-semibold text-foreground">Nigeria </p>Based in Lagos</div>
             </div>
           </div>
