@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Phone, Smartphone, Globe, ArrowRight, ExternalLink } from "lucide-react";
+import { link } from "fs";
 
 function SectionWrapper({ id, title, children, subtitle }: { id: string; title: string; subtitle?: string; children: React.ReactNode }) {
   return (
@@ -43,7 +44,7 @@ function Hero() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 pt-2">
-              {["TypeScript","React","Node.js","React Native","PostgreSQL","Prisma","Supabase","Tailwind","AWS"].map((s) => (
+              {["TypeScript","React","Node.js","React Native","PostgreSQL","Sequelize","Supabase","Tailwind","AWS"].map((s) => (
                 <Badge key={s} variant="secondary">{s}</Badge>
               ))}
             </div>
@@ -73,19 +74,34 @@ function Hero() {
 function Projects() {
   const projects = [
     {
-      title: "FinEdge — Personal Finance App",
-      desc: "Cross‑platform app for budgeting, analytics, and bank sync with Plaid. React Native + Supabase backend.",
-      stack: ["React Native","Expo","Supabase","PostgreSQL"],
+      title: "Charmpay — Finance App",
+      desc: "Cross‑platform app for payments, transfers, and savings. React Native + Node.js + PostgreSQL.",
+      stack: ["React Native","Expo","Node.js","PostgreSQL"],
+      link: "https://charmpay.com.ng",
     },
     {
-      title: "MedTrack — Telehealth Platform",
-      desc: "HIPAA‑aware telemedicine web app with real‑time visits, scheduling, and E2E encryption.",
-      stack: ["React","Node.js","WebRTC","PostgreSQL"],
+      title: "6thtouch Academy — EdTech Platform",
+      desc: "LMS with content authoring, quizzes, assignments, and analytics. React + Node.js + PostgreSQL.",
+      stack: ["React","Node.js","flutterwave","PostgreSQL"],
+      link: "https://www.6thtouchrobotics.com.ng/",
     },
     {
-      title: "Learnly — Adaptive LMS",
-      desc: "Multi‑tenant LMS with content authoring, analytics, and AI‑assisted study plans.",
-      stack: ["React","Next.js","Prisma","AWS"],
+      title: "Apartment — Real Estate Platform",
+      desc: " A real estate platform for buying, selling, and renting properties.",
+      stack: ["React", "Next.js"],
+      link: "https://apartmentweb.netlify.app",
+    },
+    {
+      title: "Kofee — Wordpress ",
+      desc: "A kofee shop website built with wordpress",
+      stack: ["React","Next.js","Sequelize","Aiven"],
+      link: "https://pro0192.wordpress.com",
+    },
+    {
+      title: "The laptop Store — Ecommerce Website",
+      desc: "An ecommerce website built with code",
+      stack: ["React","Next.js","Node.js","Express"],
+      link: "https://thelapstore.vercel.app",
     },
   ];
   return (
@@ -96,7 +112,7 @@ function Projects() {
             <CardHeader>
               <CardTitle className="flex items-start justify-between gap-3">
                 <span>{p.title}</span>
-                <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">Live <ExternalLink className="size-3" /></span>
+                <a href={p.link} target="_blank" rel="noopener noreferrer"><span className="inline-flex items-center gap-1 text-xs text-muted-foreground pointer">Live <ExternalLink className="size-3" /></span></a>
               </CardTitle>
               <CardDescription>{p.desc}</CardDescription>
             </CardHeader>
@@ -117,9 +133,9 @@ function Projects() {
 function Skills() {
   const skills = [
     { title: "Frontend", items: ["React","Next.js","TypeScript","TailwindCSS","Framer Motion","Zod"] },
-    { title: "Backend", items: ["Node.js","Express","PostgreSQL","Prisma","Supabase","tRPC/REST"] },
+    { title: "Backend", items: ["Node.js","Express","PostgreSQL","Sequelize","Supabase","tRPC/REST"] },
     { title: "Mobile", items: ["React Native","Expo","Flutter (basic)","App Store / Play Store"] },
-    { title: "DevOps", items: ["Docker","CI/CD","AWS","Vercel","Netlify","Sentry"] },
+    { title: "DevOps", items: ["CI/CD","AWS","Vercel","Netlify","Render"] },
   ];
   return (
     <SectionWrapper id="skills" title="Skills & Tools" subtitle="Battle‑tested technologies I use to deliver reliable software.">
@@ -188,14 +204,14 @@ function Contact() {
             <CardDescription>Reach out via email or phone. I typically respond within 24 hours.</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
-            <a href="mailto:hello@promiseibeh.dev" className="inline-flex items-center gap-2">
-              <Mail className="size-4 text-primary" /> hello@promiseibeh.dev
+            <a href="mailto:ibehpromise3d@gmail.com" className="inline-flex items-center gap-2">
+              <Mail className="size-4 text-primary" /> ibehpromise3d@gmail.com
             </a>
-            <a href="tel:+2348012345678" className="inline-flex items-center gap-2">
-              <Phone className="size-4 text-primary" /> +234 80 1234 5678
+            <a href="tel:+2347031364727" className="inline-flex items-center gap-2">
+              <Phone className="size-4 text-primary" /> +234 70 3136 4727
             </a>
-            <a href="https://promiseibeh.dev" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
-              <Globe className="size-4 text-primary" /> promiseibeh.dev
+            <a href="https://promiseibeh.netlify.app" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
+              <Globe className="size-4 text-primary" /> promiseibeh.netlify.app
             </a>
           </CardContent>
         </Card>
@@ -215,7 +231,7 @@ function Contact() {
         </Card>
       </div>
       <div className="mt-6">
-        <a href="mailto:hello@promiseibeh.dev">
+        <a href="mailto:ibehpromise3d@gmail.com">
           <Button className="group">Start a conversation <ArrowRight className="transition-transform group-hover:translate-x-0.5" /></Button>
         </a>
       </div>

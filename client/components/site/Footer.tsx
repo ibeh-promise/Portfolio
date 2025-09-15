@@ -23,10 +23,10 @@ export function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Contact</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="mailto:hello@promiseibeh.dev" className="hover:text-foreground">hello@promiseibeh.dev</a></li>
-            <li><a href="https://github.com/promise-ibeh" target="_blank" rel="noreferrer" className="hover:text-foreground">GitHub</a></li>
+            <li><a href="mailto:ibehpromise3d@gmail.com" className="hover:text-foreground">ibehpromise3d@gmail.com</a></li>
+            <li><a href="https://github.com/ibeh-promise" target="_blank" rel="noreferrer" className="hover:text-foreground">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/promise-ibeh" target="_blank" rel="noreferrer" className="hover:text-foreground">LinkedIn</a></li>
-            <li><a href="https://x.com/promise_idev" target="_blank" rel="noreferrer" className="hover:text-foreground">X (Twitter)</a></li>
+            <li><a href="https://x.com/promiseibe17991" target="_blank" rel="noreferrer" className="hover:text-foreground">X (Twitter)</a></li>
           </ul>
         </div>
       </div>

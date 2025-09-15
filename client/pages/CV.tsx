@@ -13,8 +13,8 @@ export default function CV() {
         <header className="grid gap-2">
           <h2 className="text-2xl font-bold">Promise Ibeh</h2>
           <p className="text-muted-foreground">
-            Full‑Stack Engineer • Mobile App Developer • Lagos, Nigeria — hello@promiseibeh.dev
-          </p>
+            Full‑Stack Engineer • Mobile App Developer • Lagos, Nigeria — ibehpromise3d@gmail.com
+        </p>
         </header>
 
         <section>
@@ -27,7 +27,7 @@ export default function CV() {
         <section>
           <h3 className="font-semibold mb-2">Skills</h3>
           <div className="flex flex-wrap gap-2">
-            {["TypeScript","React","Next.js","React Native","Node.js","Express","PostgreSQL","Prisma","Supabase","TailwindCSS","Docker","CI/CD","AWS","Vercel","Netlify"].map((s) => (
+            {["TypeScript","React","Next.js","React Native","Node.js","Express","PostgreSQL","Sequelize","Supabase","TailwindCSS","Docker","CI/CD","AWS","Vercel","Netlify"].map((s) => (
               <Badge key={s} variant="secondary">{s}</Badge>
             ))}
           </div>
@@ -62,7 +62,7 @@ export default function CV() {
 
         <section>
           <h3 className="font-semibold mb-2">Education</h3>
-          <p className="text-sm text-muted-foreground">B.Sc. Computer Science — University in Nigeria</p>
+          <p className="text-sm text-muted-foreground">Senior Secondary School Certificate</p>
         </section>
       </section>
     </main>
