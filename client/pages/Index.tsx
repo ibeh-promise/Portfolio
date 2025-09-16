@@ -86,6 +86,12 @@ function Projects() {
       link: "https://www.6thtouchrobotics.com.ng/",
     },
     {
+      title: "Universal Database — SaaS Platform",
+      desc: "Multi‑tenant platform for managing and visualizing data. React + Next.js + Prisma + AWS.",
+      stack: ["React","Next.js","Sequelize","Aiven"],
+      link: "https://unidb.vercel.app",
+    },
+    {
       title: "Apartment — Real Estate Platform",
       desc: " A real estate platform for buying, selling, and renting properties.",
       stack: ["React", "Next.js"],
