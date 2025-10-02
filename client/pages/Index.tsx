@@ -86,6 +86,12 @@ function Projects() {
       link: "https://www.6thtouchrobotics.com.ng/",
     },
     {
+      title: "Nur Siddika — Personal Portfolio",
+      desc: "Nur a passionate UI/UX designer with 3+ years of experience creating seamless digital experiences. My design philosophy centers on simplicity, usability, and impact. I aim to craft designs that solve real-world problems while looking modern and engaging.",
+      stack: ["React", "TypeScript", "HTML"],
+      link: "https://nursiddika.netlify.app",
+    },
+    {
       title: "Universal Database — SaaS Platform",
       desc: "Multi‑tenant platform for managing and visualizing data. React + Next.js + Prisma + AWS.",
       stack: ["React","Next.js","Sequelize","Aiven"],
@@ -100,7 +106,7 @@ function Projects() {
     {
       title: "Kofee — Wordpress ",
       desc: "A kofee shop website built with wordpress",
-      stack: ["React","Next.js","Sequelize","Aiven"],
+      stack: ["CMS", "Wordpress"],
       link: "https://pro0192.wordpress.com",
     },
     {
