@@ -3,13 +3,18 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
-
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  
+
 [[redirects]]
   force = true
   from = "/api/*"
-  status = 200
   to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# 👇 Add this for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
