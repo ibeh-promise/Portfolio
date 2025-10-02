@@ -53,7 +53,7 @@ function Hero() {
             <div className="relative mx-auto aspect-square w-64 sm:w-80 rounded-2xl bg-gradient-to-br from-primary to-accent p-1 shadow-2xl">
               <div className="h-full w-full rounded-xl bg-background grid place-items-center overflow-hidden">
                 <img
-                  src="/PromiseIbeh.png"
+                  src="/IMG_20251002_013254.jpg"
                   alt="Promise Ibeh"
                   className="w-full h-full object-cover roynded-xl animate-float"
                 />
